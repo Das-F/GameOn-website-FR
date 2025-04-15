@@ -17,6 +17,18 @@ const inputs = document.querySelectorAll(
   'input[type="text"], input[type="email"], input[type="date"], input[type="number"], input[type="radio"], input[type="checkbox"]'
 );
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.querySelector(".icon");
+  const nav = document.getElementById("myTopnav");
+
+  if (menuIcon && nav) {
+    menuIcon.addEventListener("click", (e) => {
+      e.preventDefault();
+      nav.classList.toggle("responsive");
+    });
+  }
+});
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
@@ -51,6 +63,7 @@ const errorDisplay = (inputId, message, valid, directElement = null) => {
 
 // Inputs functions
 const firstChecker = (value) => {
+  value = value.trim();
   if (value.length > 0 && value.length < 2) {
     errorDisplay("first", "Le prénom doit faire au moins 2 caractères", false);
     return false;
@@ -68,6 +81,7 @@ const firstChecker = (value) => {
 };
 
 const lastChecker = (value) => {
+  value = value.trim();
   if (value.length > 0 && value.length < 2) {
     errorDisplay("last", "Le nom doit faire au moins 2 caractères", false);
     return false;
@@ -85,6 +99,7 @@ const lastChecker = (value) => {
 };
 
 const emailChecker = (value) => {
+  value = value.trim();
   if (!value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i)) {
     errorDisplay("email", "Le mail n'est pas valide");
     return false;

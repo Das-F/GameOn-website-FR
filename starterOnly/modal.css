@@ -12,11 +12,13 @@
 
 body {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
-  max-width: 1300px;
+  max-width: 1440px;
+  margin: auto;
   overflow-x: hidden;
 }
 
@@ -74,6 +76,9 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
+    color: red;
+    background-color: transparent;
+    font-size: x-large;
   }
 }
 
