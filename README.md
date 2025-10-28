@@ -1,42 +1,56 @@
-# Projet GameOn
-GameOn (Version FR)
-Site web statique de présentation / vitrine — projet front-end
+🎮 GameOn — Site vitrine responsive en HTML, CSS & JavaScript
+GameOn est un projet du parcours Développeur Front-End OpenClassrooms.
+L’objectif est de construire un site vitrine statique, moderne et fonctionnel, en HTML, CSS et JavaScript pur, sans aucun framework ni bibliothèque externe.
 
-🎯 Objectif du projet
-Ce projet vise à créer une version française du site GameOn, dans le cadre du « Projet 4 » du parcours développeur front-end. L’idée est de construire un site fonctionnel et esthétique sans utiliser de framework externe (bootstrap, jQuery, etc.), uniquement en HTML, CSS et JavaScript « natifs ».
+🎯 Objectifs du projet
+Créer un site web complet en HTML / CSS / JS.
+Mettre en œuvre un design responsive (mobile, tablette, desktop).
+Gérer les interactions et la validation des formulaires via JavaScript.
+Travailler sur la structure, la clarté et la performance du code.
+Respecter les bonnes pratiques du développement front-end.
 
-📁 Structure & composants
-HTML : pages statiques (index, pages internes, sections)
-CSS : styles personnalisés, responsive (media queries, flexbox, grid…)
-JavaScript pur : interactions, animations, gestion du DOM
-Pas de dépendances externes (aucun package, aucune librairie)
-Projet sans backend — uniquement front-end
+⚙️ Technologies utilisées
+🧱 HTML5 — Structure du site
+🎨 CSS3 — Mise en page, animations et responsive design
+⚡ JavaScript natif (ES6) — Gestion du DOM, interactions, validation du formulaire
+🚫 Aucune dépendance externe — Pas de framework, pas de librairie
 
-🛠 Installation & usage
-Cloner le dépôt
+📁 Structure du projet
+GameOn-website-FR/
+├── index.html           → Page principale
+├── assets/              → Images et icônes
+├── css/                 → Fichiers de style (style.css, responsive.css, etc.)
+├── js/                  → Scripts JavaScript
+│   ├── modal.js         → Gestion de la fenêtre modale
+│   ├── form.js          → Validation du formulaire
+│   └── main.js          → Logique générale
+└── README.md
+
+🚀 Installation & utilisation
+1️⃣ Cloner le dépôt :
+```
 git clone https://github.com/Das-F/GameOn-website-FR.git
+```
 
-Ouvrir le projet dans un éditeur (ex. VS Code)
-Servir les fichiers (par exemple via une extension « Live Server ») ou simplement ouvrir le fichier index.html dans un navigateur
-Aucun build, compilation ou dépendance à installer
+2️⃣ Ouvrir le projet dans un éditeur (ex : VS Code).
 
-✅ Fonctions & particularités
-Design responsive (s’adapte aux mobiles / tablettes / desktops)
-Navigation fluide entre les sections
-Animations et transitions légères avec JS / CSS
-Version entièrement en français
-Code propre, structuré et commenté
+3️⃣ Lancer le site :
+Soit avec une extension comme Live Server,
+Soit simplement en ouvrant le fichier index.html dans ton navigateur.
 
-🧩 Limitations & pistes d’amélioration
-Pas de backend, donc pas de gestion de données dynamique
+💡 Aucun build ni dépendance à installer.
+✅ Fonctionnalités principales
+💬 Formulaire dynamique : validation des champs, messages d’erreur personnalisés.
+📱 Design responsive : s’adapte à tous les écrans (mobile, tablette, desktop).
+🎞️ Modale interactive : ouverture / fermeture fluide, accessibilité améliorée.
+🌐 Version 100% française.
+🧩 Code clair et commenté, facile à maintenir.
+
+⚠️ Limites & pistes d’amélioration
+Le projet est entièrement statique (pas de backend).
 Améliorations possibles :
-  • Intégration d’un CMS ou d’une API pour contenu dynamique
-  • Ajout d’authentification / espace utilisateur
-  • Optimisations de performance (lazy loading, optimisation images)
-  • Tests unitaires / automatisation
-
-🚀 Objectifs pédagogiques
-Maîtriser le développement front-end en pur HTML / CSS / JS
-Comprendre la structuration d’un site statique
-Apprendre à concevoir un site responsive sans framework
-Renforcer les bonnes pratiques : modularité, lisibilité, performance
+🔗 Intégrer une API ou un CMS pour un contenu dynamique.
+👤 Ajouter un espace utilisateur ou une authentification.
+⚡ Optimiser les performances (lazy loading, compression d’images).
+🧪 Mettre en place des tests unitaires.
+♿ Améliorer encore l’accessibilité (ARIA, navigation clavier).
